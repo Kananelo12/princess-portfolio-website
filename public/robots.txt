@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ketumile-peete.web.app/sitemap.xml

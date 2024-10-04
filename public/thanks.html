@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Email Thank You Page</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
+		}
+
+		a:hover {
+			color: aliceblue;
+			text-decoration: none;
+		}
+
+		.container {
+			max-width: 900px;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.title {
+			max-width: 820px;
+			padding: 20px 0;
+		}
+
+		.title h1 {
+			font-size: 6.25rem;
+			line-height: 1.1;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.main-content {
+			max-width: 820px;
+			padding: 10px 0;
+		}
+
+		.main-content p {
+			font-family: 'Lato', sans-serif;
+			font-size: 1.25rem;
+			line-height: 1.4;
+		}
+
+		i.fa-check {
+			display: block;
+			font-size: 6rem;
+			color: bisque;
+		}
+
+		footer {
+			margin-top: 1rem;
+		}
+
+		/*======== media queries css ======*/
+		@media (max-width: 850px) {
+			.container {
+				width: 100%;
+				padding: 0 40px;
+			}
+
+			.title h1 {
+				font-size: 4.5rem;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.title h1 {
+				font-size: 2rem;
+			}
+
+			.main-content {
+				max-width: 820px;
+				padding: 5px 0;
+			}
+
+			.main-content p {
+				font-size: 1rem;
+			}
+
+			i.fa-check {
+				font-size: 4rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>THANK YOU!</h1>
+		</div>
+		<div class="main-content">
+			<p class="main-content__body">Thanks a bunch for filling that out. It means a lot to me, just like you do!
+				We really appreciate you giving us a moment of your time today.</p>
+			<i class="fa fa-check"></i>
+			<button type="button" id="backToHomeBTN" class="btn btn-dark px-5 py-2 mt-3"><a href="index.html">Back to
+					Home</a></button>
+		</div>
+		<footer class="site-footer" id="footer">
+			<p class="site-footer__fineprint" id="fineprint">Copyright ©2024 | All Rights Reserved</p>
+		</footer>
+	</div>
+
+
+	<script>
+		const toHomeBTN = document.querySelector("#backToHomeBTN");
+		toHomeBTN.addEventListener("click", () => {
+			window.location.href = "index.html";
+		})
+	</script>
+
+</body>
+
+</html>
